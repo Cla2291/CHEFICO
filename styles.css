@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'built titling bd';
+    src: url('Font/built titling bd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('Gif/art installation GIF.gif') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Testo "CHE FICO!" in alto a sinistra */
+.text {
+    font-family: 'built titling', sans-serif;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Testo in alto a destra */
+.brand {
+    font-family: 'built titling', sans-serif;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+/* Contenitore delle immagini */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Box numerati */
+.box {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Numeri all'interno del box */
+.box .number {
+    font-family: 'built titling', sans-serif;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+}
+
+/* Effetto hover */
+.box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+.box a {
+    text-decoration: none;
+}

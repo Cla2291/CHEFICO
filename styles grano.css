@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'built titling bd';
+    src: url('Font/built titling bd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Gif/art installation grano.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.text {
+    font-family: 'built titling', sans-serif;
+    font-size: 175px;
+    color: white;
+}
+
+.home-link {
+    font-family: 'built titling', sans-serif;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+text-decoration: none;
+}
+
+
